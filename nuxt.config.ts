@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@nuxt/content",
     "@nuxthub/core",
+    "nuxt-studio",
   ],
   css: ["~/assets/css/main.css"],
   ui: {

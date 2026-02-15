@@ -1,12 +1,12 @@
 <script setup lang="ts">
 const route = useRoute();
-const selTitle = route.query?.title;
+const selTitle = route.params.name;
 
 // Ambil data produk berdasarkan path
 const { data: post } = (await useAsyncData("products", () =>
   queryCollection("products")
-    .path(selTitle as string)
-    .first()
+    .path(("/products/" + selTitle) as string)
+    .first(),
 )) as Record<string, any>;
 </script>
 

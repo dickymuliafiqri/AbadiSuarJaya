@@ -7,7 +7,7 @@ const { data: posts } = await useAsyncData("products", () => queryCollection("pr
     <h1 class="text-3xl font-bold mb-6 text-center">Katalog Produk</h1>
 
     <div class="flex flex-wrap gap-3">
-      <NuxtLink v-for="post in posts" :key="post.id" :to="`/product?title=${post.path}`" target="_blank">
+      <NuxtLink v-for="post in posts" :key="post.id" :to="`${post.path}`" target="_blank">
         <UCard class="hover:shadow-md transition ring-0">
           <!-- Gambar produk -->
           <img :src="post.meta.image as string" :alt="post.title" class="w-48 h-48 object-cover rounded" />
