@@ -1,5 +1,6 @@
 ---
 title: Kursi file
+description: TULIS AJA TERSERAH
 ---
 
 # Kursi file
@@ -13,3 +14,5 @@ MIsal kita tambahkan judul
 Atau juga bisa ditambahkan gambar
 
 ![contoh](/images/contoh.png)
+
+Nah sekarang dicoba tambah dengan akun kollaborator
