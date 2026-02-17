@@ -1,8 +1,9 @@
 ---
 title: Side Table
 description: Kuat, awet, dan cocok untuk ruang makan.
+image:
+  src: /images/side-table.png
 price: 1.xxx.xxx
-image: /images/side-table.png
 ---
 
 # Side Table

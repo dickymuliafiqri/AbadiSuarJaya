@@ -1,9 +1,11 @@
 ---
 title: Sculpture
+description: Hadirkan sentuhan elegan dan berkelas di ruangan Anda dengan sculpture setinggi 170 cm yang dirancang untuk menjadi pusat perhatian. Dengan detail yang presisi dan desain artistik yang modern, karya ini cocok untuk mempercantik ruang tamu, lobby hotel, galeri, maupun area komersial lainnya. Ukurannya yang tinggi dan proporsional memberikan kesan mewah tanpa terlihat berlebihan.
+image:
+  src: /sculpture-170.jpeg
 seo:
   title: Sculpture file
-  description: ""
-image: /sculpture-170.jpeg
+  description: Hadirkan sentuhan elegan dan berkelas di ruangan Anda dengan sculpture setinggi 170 cm yang dirancang untuk menjadi pusat perhatian. Dengan detail yang presisi dan desain artistik yang modern, karya ini cocok untuk mempercantik ruang tamu, lobby hotel, galeri, maupun area komersial lainnya. Ukurannya yang tinggi dan proporsional memberikan kesan mewah tanpa terlihat berlebihan.
 ---
 
 # Sculpture

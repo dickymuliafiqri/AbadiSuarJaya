@@ -21,15 +21,15 @@ const { data: posts } = await useAsyncData("products", () => queryCollection("pr
       <UContainer>
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <UCard v-for="post in posts" :key="post.id" class="card-soft group overflow-hidden rounded-2xl ring-0">
-            <div class="relative transition duration-300 group-hover:scale-105">
-              <img :src="post.meta.image as string" :alt="post.title" class="h-56 w-full object-cover" />
+            <div class="relative rounded-md overflow-hidden">
+              <img :src="post.image.src as string" :alt="post.title" class="h-56 w-full object-cover" />
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-transparent"></div>
             </div>
             <div class="p-5 space-y-3">
               <div class="text-sm text-gray-500">Kategori: Furniture</div>
               <h3 class="text-lg font-semibold">{{ post.title }}</h3>
               <div class="flex items-center justify-between">
-                <p class="text-primary font-semibold">Rp. {{ post.meta.price }}</p>
+                <p class="text-primary font-semibold">Rp. {{ post.price }}</p>
                 <NuxtLink :external="true" :to="`${post.path}`" class="text-sm font-semibold text-slate-700">
                   Lihat detail →
                 </NuxtLink>

@@ -16,7 +16,7 @@ const { data: post } = (await useAsyncData("products", () =>
       <div v-if="post" class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] items-start">
         <div class="space-y-6">
           <div class="rounded-2xl overflow-hidden card-soft">
-            <img v-if="post.meta.image" :src="post.meta.image" :alt="post.title" class="w-full h-80 object-cover" />
+            <img v-if="post.image?.src" :src="post.image?.src" :alt="post.title" class="w-full h-80 object-cover" />
           </div>
           <div class="card-soft rounded-2xl p-6">
             <div class="section-kicker">Deskripsi</div>

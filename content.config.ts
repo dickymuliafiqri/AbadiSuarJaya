@@ -1,4 +1,5 @@
-import { defineContentConfig, defineCollection, z } from "@nuxt/content";
+import { defineContentConfig, defineCollection, property } from "@nuxt/content";
+import { z } from "zod";
 
 export default defineContentConfig({
   collections: {
@@ -7,15 +8,12 @@ export default defineContentConfig({
       source: "**/products/*.md",
       schema: z.object({
         title: z.string(),
-        description: z.string(),
-        image: z.string(),
-        price: z.string(),
-        seo: z
-          .object({
-            title: z.string().optional(),
-            description: z.string().optional(),
-          })
-          .optional(),
+        description: z.string().optional(),
+        image: z.object({
+          src: property(z.string()).editor({ input: "media" }),
+          alt: z.string(),
+        }),
+        price: z.string().optional(),
       }),
     }),
   },
