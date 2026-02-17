@@ -10,6 +10,7 @@ const items = ref<NavigationMenuItem[]>([
   {
     label: "Produk",
     to: "/catalog",
+    external: true,
   },
   {
     label: "Cara Pemesanan",
