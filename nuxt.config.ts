@@ -7,7 +7,9 @@ export default defineNuxtConfig({
   ui: {
     colorMode: false,
   },
-  nitro: {
-    preset: "static",
+  content: {
+    experimental: {
+      sqliteConnector: "native",
+    },
   },
 });
