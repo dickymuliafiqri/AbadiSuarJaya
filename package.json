@@ -29,5 +29,8 @@
     "@nuxthub/core": "0.10.6",
     "@nuxtjs/mdc": "^0.20.1",
     "wrangler": "^4.28.1"
+  },
+  "engines": {
+    "node": "24.xx"
   }
 }
