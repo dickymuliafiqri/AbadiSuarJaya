@@ -3,10 +3,15 @@ const route = useRoute();
 const selTitle = route.params.name;
 
 // Ambil data produk berdasarkan path
-const { data: post } = (await useAsyncData("products", () =>
-  queryCollection("products")
-    .path(("/products/" + selTitle) as string)
-    .first(),
+const { data: post } = (await useAsyncData(
+  "products",
+  () =>
+    queryCollection("products")
+      .path(("/products/" + selTitle) as string)
+      .first(),
+  {
+    server: false,
+  },
 )) as Record<string, any>;
 </script>
 

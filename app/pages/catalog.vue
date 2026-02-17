@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const { data: posts } = await useAsyncData("products", () => queryCollection("products").all());
+const { data: posts } = await useAsyncData("products", () => queryCollection("products").all(), {
+  server: false,
+});
 </script>
 
 <template>
