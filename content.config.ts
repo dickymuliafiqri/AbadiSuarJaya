@@ -9,6 +9,7 @@ export default defineContentConfig({
         title: z.string(),
         description: z.string(),
         image: z.string(),
+        price: z.string(),
         seo: z
           .object({
             title: z.string().optional(),

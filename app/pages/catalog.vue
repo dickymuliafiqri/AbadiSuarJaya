@@ -29,7 +29,7 @@ const { data: posts } = await useAsyncData("products", () => queryCollection("pr
               <div class="text-sm text-gray-500">Kategori: Furniture</div>
               <h3 class="text-lg font-semibold">{{ post.title }}</h3>
               <div class="flex items-center justify-between">
-                <p class="text-primary font-semibold">{{ post.meta.price }}</p>
+                <p class="text-primary font-semibold">Rp. {{ post.meta.price }}</p>
                 <NuxtLink :external="true" :to="`${post.path}`" class="text-sm font-semibold text-slate-700">
                   Lihat detail →
                 </NuxtLink>
